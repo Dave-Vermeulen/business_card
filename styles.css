@@ -22,12 +22,18 @@ body {
     background: #2D3047;
     color: #1B998B;
     border-bottom: 6px dotted #FFFD82;
-        
-    /*
-    Challenge:
-    Find a color palette you like on Coolors.co
-    and use it in your business card.
-     */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
+}
+
+.card h3, .card p, .card h4 {
+    opacity: 0; 
+    animation: fadeIn 1s forwards;
 }
 
 .border-blue {
